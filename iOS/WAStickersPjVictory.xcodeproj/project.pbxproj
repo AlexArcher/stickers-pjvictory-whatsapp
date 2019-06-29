@@ -114,7 +114,7 @@
 		8A18E3341FBA5CA90082201D /* StickerPackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerPackManager.swift; sourceTree = "<group>"; };
 		8A18E33C1FBA793F0082201D /* sticker_packs.wasticker */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sticker_packs.wasticker; sourceTree = "<group>"; };
 		8A18E33E1FBA7DC50082201D /* WebPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPManager.swift; sourceTree = "<group>"; };
-		8A22EE001F9A9F40003A7F21 /* WAStickersThirdParty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WAStickersThirdParty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A22EE001F9A9F40003A7F21 /* WAStickersPjVictory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WAStickersPjVictory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A22EE031F9A9F40003A7F21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A22EE081F9A9F40003A7F21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A22EE0A1F9A9F40003A7F21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -182,7 +182,7 @@
 		8A22EE011F9A9F40003A7F21 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8A22EE001F9A9F40003A7F21 /* WAStickersThirdParty.app */,
+				8A22EE001F9A9F40003A7F21 /* WAStickersPjVictory.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -276,9 +276,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8A22EDFF1F9A9F40003A7F21 /* WAStickersThirdParty */ = {
+		8A22EDFF1F9A9F40003A7F21 /* WAStickersPjVictory */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8A22EE121F9A9F40003A7F21 /* Build configuration list for PBXNativeTarget "WAStickersThirdParty" */;
+			buildConfigurationList = 8A22EE121F9A9F40003A7F21 /* Build configuration list for PBXNativeTarget "WAStickersPjVictory" */;
 			buildPhases = (
 				8A22EDFC1F9A9F40003A7F21 /* Sources */,
 				8A22EDFD1F9A9F40003A7F21 /* Frameworks */,
@@ -289,9 +289,9 @@
 			);
 			dependencies = (
 			);
-			name = WAStickersThirdParty;
+			name = WAStickersPjVictory;
 			productName = WAStickersThirdParty;
-			productReference = 8A22EE001F9A9F40003A7F21 /* WAStickersThirdParty.app */;
+			productReference = 8A22EE001F9A9F40003A7F21 /* WAStickersPjVictory.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -307,7 +307,7 @@
 					8A22EDFF1F9A9F40003A7F21 = {
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 0910;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 0;
@@ -316,7 +316,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8A22EDFB1F9A9F40003A7F21 /* Build configuration list for PBXProject "WAStickersThirdParty" */;
+			buildConfigurationList = 8A22EDFB1F9A9F40003A7F21 /* Build configuration list for PBXProject "WAStickersPjVictory" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -329,7 +329,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8A22EDFF1F9A9F40003A7F21 /* WAStickersThirdParty */,
+				8A22EDFF1F9A9F40003A7F21 /* WAStickersPjVictory */,
 			);
 		};
 /* End PBXProject section */
@@ -539,7 +539,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -550,6 +550,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WA.PjVictoryStockers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "WAStickersThirdParty/WAStickersThirdParty-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -563,7 +564,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -574,6 +575,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WA.PjVictoryStockers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "WAStickersThirdParty/WAStickersThirdParty-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -583,7 +585,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8A22EDFB1F9A9F40003A7F21 /* Build configuration list for PBXProject "WAStickersThirdParty" */ = {
+		8A22EDFB1F9A9F40003A7F21 /* Build configuration list for PBXProject "WAStickersPjVictory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8A22EE101F9A9F40003A7F21 /* Debug */,
@@ -592,7 +594,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8A22EE121F9A9F40003A7F21 /* Build configuration list for PBXNativeTarget "WAStickersThirdParty" */ = {
+		8A22EE121F9A9F40003A7F21 /* Build configuration list for PBXNativeTarget "WAStickersPjVictory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8A22EE131F9A9F40003A7F21 /* Debug */,

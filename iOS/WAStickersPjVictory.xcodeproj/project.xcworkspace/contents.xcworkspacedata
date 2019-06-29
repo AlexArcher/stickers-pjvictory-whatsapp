@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:WAStickersThirdParty.xcodeproj">
+      location = "self:/Users/kaiser/Projects/Stickers/PjVictory/stickers-pjvictory-whatsapp/iOS/WAStickersPjVictory.xcodeproj">
    </FileRef>
 </Workspace>

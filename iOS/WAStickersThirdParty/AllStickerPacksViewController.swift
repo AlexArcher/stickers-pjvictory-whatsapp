@@ -12,7 +12,6 @@ class AllStickerPacksViewController: UIViewController, UITableViewDataSource, UI
 
     @IBOutlet private weak var stickerPacksTableView: UITableView!
 
-    private var needsFetchStickerPacks = true
     private var stickerPacks: [StickerPack] = []
     private var selectedIndex: IndexPath?
 
@@ -37,33 +36,20 @@ class AllStickerPacksViewController: UIViewController, UITableViewDataSource, UI
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        if needsFetchStickerPacks {
-            let alert: UIAlertController = UIAlertController(title: "Don't ship this sample app!", message: "If you want to ship your sticker packs to the App Store, create your own app with its own user interface. Your app must have minimum to no resemblance to this sample app.", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { action in
-                self.needsFetchStickerPacks = false
-                self.fetchStickerPacks()
-            }))
-            present(alert, animated: true, completion:nil)
-        }
-    }
-
-    private func fetchStickerPacks() {
-        let loadingAlert: UIAlertController = UIAlertController(title: "Loading sticker packs", message: "\n\n", preferredStyle: .alert)
-        loadingAlert.addSpinner()
-        present(loadingAlert, animated: true, completion: nil)
-
+        
         do {
-            try StickerPackManager.fetchStickerPacks(fromJSON: StickerPackManager.stickersJSON(contentsOfFile: "sticker_packs")) { stickerPacks in
-                loadingAlert.dismiss(animated: false, completion: {
-                    self.navigationController?.navigationBar.alpha = 1.0;
+            try StickerPackManager.fetchStickerPacks(fromJSON: StickerPackManager.stickersJSON(contentsOfFile: "sticker_packs")) {
+                
+                stickerPacks in
+                
+                self.navigationController?.navigationBar.alpha = 1.0;
 
-                    if stickerPacks.count > 1 {
-                        self.stickerPacks = stickerPacks
-                        self.stickerPacksTableView.reloadData()
-                    } else {
-                        self.show(stickerPack: stickerPacks[0], animated: false)
-                    }
-                })
+                if stickerPacks.count > 1 {
+                    self.stickerPacks = stickerPacks
+                    self.stickerPacksTableView.reloadData()
+                } else {
+                    self.show(stickerPack: stickerPacks[0], animated: false)
+                }
             }
         } catch StickerPackError.fileNotFound {
             fatalError("sticker_packs.wasticker not found.")
